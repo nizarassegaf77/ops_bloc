@@ -29,6 +29,15 @@ class FirstPageLoaded extends BottomNavigationState {
   String toString() => 'FirstPageLoaded with text: $text';
 }
 
+class MartboxPageLoaded extends BottomNavigationState {
+  final String text;
+
+  MartboxPageLoaded({@required this.text}) : super([text]);
+
+  @override
+  String toString() => 'Martboxloaded with text: $text';
+}
+
 class SecondPageLoaded extends BottomNavigationState {
   final int number;
 
